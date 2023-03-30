@@ -29,8 +29,7 @@ internal class Program
         Array.Sort(nums);
         for (int countdown = 2; countdown > 0; countdown--)
         {
-            int n = nums.Length;
-            Array.Resize(ref nums, n - 1);
+            Array.Resize(ref nums, nums.Length - 1);
         }
         return nums[nums.Length - 1];
     }
