@@ -31,7 +31,7 @@ internal class Program
         {
             Array.Resize(ref nums, nums.Length - 1);
         }
-        return nums[nums.Length - 1];
+        return nums[^1];
     }
 
 }
